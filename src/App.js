@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { ImBin2 } from 'react-icons/im';
 import { Button } from "./styledComp/Button";
 import { Section } from "./styledComp/Section";
+import { Form } from "./styledComp/Form";
 
 
   const getLocalStorage = () => {
@@ -49,7 +50,7 @@ function App() {
     <>
       <Section bgc="rgba(0, 0, 255, 0.041)" className="total-section"> 
         <h2 className="fs-3">Enter Task</h2>
-        <form className="form-control" onSubmit={handleSubmit}>
+        <Form w="35%" className="form-control" onSubmit={handleSubmit}> 
           <input
             type="text"
             name="task"
@@ -61,7 +62,7 @@ function App() {
               Add Task
            </Button>
          
-        </form>
+          </Form>
         <div className="container">
           <ul>
           {arrTask.length > 0 ? arrTask.map((item, index) => (
