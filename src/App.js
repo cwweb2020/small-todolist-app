@@ -5,6 +5,8 @@ import { ImBin2 } from 'react-icons/im';
 import { Button } from "./styledComp/Button";
 import { Section } from "./styledComp/Section";
 import { Form } from "./styledComp/Form";
+import { Heading } from "./styledComp/Heading";
+
 
 
   const getLocalStorage = () => {
@@ -48,8 +50,8 @@ function App() {
 
   return (
     <>
-      <Section bgc="rgba(0, 0, 255, 0.041)" className="total-section"> 
-        <h2 className="fs-3">Enter Task</h2>
+      <Section bgc="rgba(0, 0, 255, 0.041)"> 
+        <Heading fs="1.7rem">enter task</Heading>
         <Form w="35%" className="form-control" onSubmit={handleSubmit}> 
           <input
             type="text"
@@ -58,7 +60,7 @@ function App() {
             placeholder="Task"
             className="form-control"
           />
-           <Button bc="teal" type="submit">
+           <Button bc="green" m="20px 0 0 0" type="submit">
               Add Task
            </Button>
          
