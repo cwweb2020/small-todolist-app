@@ -60,7 +60,7 @@ function App() {
             placeholder="Task"
             className="form-control"
           />
-           <Button bc="green" m="20px 0 0 0" type="submit">
+           <Button bc="teal" m="20px 0 0 0" type="submit">
               Add Task
            </Button>
          
@@ -68,7 +68,7 @@ function App() {
         <div className="container">
           <ul>
           {arrTask.length > 0 ? arrTask.map((item, index) => (
-              <li className="my-3 text-capitalize" key={index}>{item} - <ImBin2 onClick={() => handleDelete(item)} /> </li>
+              <li className="my-3 text-capitalize fs-5" key={index}>{item} - <ImBin2 onClick={() => handleDelete(item)} /> </li>
             )) : null}
  
           </ul>
